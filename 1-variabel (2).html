@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variabel</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+
+    .container{
+      min-height: 100vh;
+    }
+
+    .teks-tengah{
+      text-align: center;
+    }
+    .teks-kiri{
+      text-align: left;
+    }
+    .teks-kanan{
+      text-align: right;
+    }
+    .teks-tebal{
+      font-weight: bold;
+    }
+    .indentasi{
+      text-indent: 20px;
+    }
+
+    .footer{
+      background-color: rgb(65, 65, 65);
+      height: 80px;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+    }
+  </style>
+</head>
+<body>
+  <!-- Task 1 -->
+  <div class="container" id="pembungkus">
+    <h4 class="teks-tengah teks-tebal" id="judul">Bruh</h4>
+    <div class="indentasi" id="paragraf">
+      Bruh  
+    </div>
+  </div>
+
+  <!-- Task 2 -->
+  <div class="footer">
+    <div class="teks-kiri teks-tebal" id="kiri">
+      Kiri
+    </div>
+    <div class="teks-kanan teks-tebal" id="kanan">
+      Kanan  
+    </div>
+  </div>
+  
+
+  <script>
+    // Task 1
+    var judul = "Le Orem Ipsum"
+
+    getElementById = document.getElementById('judul');
+    getElementById.innerHTML = judul;
+
+    var teks = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. At earum natus error dignissimos? Vero optio dicta aliquam ad necessitatibus cupiditate magni repellendus, consectetur asperiores consequuntur deleniti quas recusandae, tempore iusto.";
+
+    getElementById = document.getElementById('paragraf');
+    getElementById.innerHTML = teks;
+
+ 
+
+    // Task 2
+    document.getElementById('kiri').innerHTML = "About";
+    document.getElementById('kanan').innerHTML = "Privacy and Policy";
+  </script>
+</body>
+</html>

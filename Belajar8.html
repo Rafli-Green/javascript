@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Java Script</title>
+</head>
+<body>
+    <div class="container">
+        <div id="paragraph">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus incidunt commodi asperiores nam? Cumque nobis voluptatem illo molestiae, soluta earum ab nam incidunt unde repellat hic corporis pariatur, ut vel.
+        </div>
+    </div>
+    <div class="container">
+        <div class="paragraph1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus incidunt commodi asperiores nam? Cumque nobis voluptatem illo molestiae, soluta earum ab nam incidunt unde repellat hic corporis pariatur, ut vel.
+        </div>
+    </div>
+<script>
+
+        // Pelajaran Ke 1
+    // var angka = 15;
+    // console.log(angka);
+
+        // Pelajaran Ke 2
+    var globalVar = " Assalamu'alaikum wr.wb";
+    let limitedVar = " Wa'alaikumussalam wr.wb";
+    const constanta = " Aku Seorang Hamba Yang Bertaubat";
+
+    console.log(globalVar);
+    console.log(limitedVar);
+    console.log(constanta);
+    
+    globalVar = 1;
+    limitedVar = 2;
+    // constanta = 3; ==> // console.log(constanta); ==> Const adalah bilangan yang tidak bisa tergantikan bila diinclude const dengan perubahan baru maka terjadi error.//
+
+    console.log(globalVar);
+    console.log(limitedVar);
+    // console.log(constanta); ==> Const adalah bilangan yang tidak bisa tergantikan bila diinclude const dengan perubahan baru maka terjadi error.//
+
+        // Pelajaran Ke 3
+    var getElementById = document.getElementById('paragraph');
+    getElementById.innerHTML = "Bismillah Raf, Ojk Kalah Karo Kafir !";
+    
+
+        //Pelajaran Ke 4
+    var getElementById = document.getElementById('paragraph');
+    console.log(getElementById);
+
+        //Pelajaran Ke 5
+    var getElementsByClassName = document.getElementsByClassName('.paragraph1');
+    console.log(getElementsByClassName);
+
+    //Pelajaran Ke 6 
+    var getByQueryAll = document.querySelectorAll('.container');
+</script>
+</body>
+</html>

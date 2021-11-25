@@ -1,0 +1,76 @@
+<!--
+Instruksi Task:
+buat eventListener onclick pada element <button> yang
+digunakan untuk memanipulasi DOM pada div box
+
+Ketentuan:
+-buat listener untuk setiap button
+-tidak boleh mengganti var
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic DOM</title>
+  <style>
+    button{
+      background-color: black;
+      color: white;
+      padding: 2px 4px;
+      font-size: 12px;
+      margin: 0 4px;
+    }
+
+    .teks-tengah{
+      text-align: center;
+    }
+    .teks-tebal{
+      font-weight: bold;
+    }
+    .indentasi{
+      text-indent: 20px;
+    }
+
+    .box{
+      width: 200px;
+      height: auto;
+      margin: 0 auto;
+      padding: 10px;
+    }
+    .box > h4{
+      margin: 0;
+      margin-bottom: 8px;
+    }
+    .bg-putih
+    {
+      background-color: white ;
+    }
+    .bg-hijau{
+      background-color: seagreen;
+    }
+  </style>
+</head>
+<body>
+  <div class="box bg-putih" id="box">
+    <h4 class="teks-tengah" id="judul">Some Title</h4>
+    <div class="indentasi" id="paragraf">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quas nesciunt dolores quidem autem saepe tenetur provident 
+      nisi quo et voluptatum debitis expedita excepturi numquam earum commodi, veniam nulla quam?
+    </div>
+  </div>
+  
+  <div style="display: flex; justify-content: center;">
+    <button onclick= 'document.getElementById("judul").innerHTML = isiJudul';>Tambahkan Judul</button>
+    <button onclick= 'document.getElementById("paragraf").innerHTML = isiParagraf';>Tambahkan Paragraf</button>
+    <button onclick="document.getElementById('box').classList.toggle('bg-white'); document.getElementById('box').classList.toggle('bg-hijau');">Toggle Warna</button>
+  </div>  
+
+  <script>     
+    var isiJudul = 'Le Ipsum';
+    var isiParagraf = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit';
+  </script>
+</body>
+</html>

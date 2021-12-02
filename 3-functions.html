@@ -1,0 +1,49 @@
+<!--
+Instruksi Task:
+Buat alat penjumlah dengan ketentuan sebagai berikut..
+
+Ketentuan:
+-div "bil-satu" untuk bilangan satu dan div "bil-dua" untuk bilangan dua
+-kedua div bilangan bisa dinaikkan +1 nilainya dengan cara menekan button yang sesuai
+-jika button Ketiga ditekan maka nilai div "bil-satu" dan "bil-dua" akan dijumlahkan
+-kalian bebas menambahkan parameter pada functions
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions</title>
+</head>
+<body>
+  <div id="bil-satu">1</div>
+  <div id="bil-dua">1</div>
+  <div id="hasil"></div>
+
+
+  <button onclick="Tambahkan('bil-satu')">Tambahkan bilangan satu</button>
+  <button onclick="Tambahkan('bil-dua')">Tambahkan bilangan dua</button>
+  <button onclick="Kalkula()">Jumlahkan bilangan satu dan dua</button>
+
+  <script>
+    
+    function Tambahkan(bilangan){
+      let elem = document.getElementById(bilangan);
+      elem.innerHTML = parseInt(elem.innerHTML) + 1;
+   
+    }
+  
+    function Kalkula(){
+     let bilangan_satu = document.getElementById("bil-satu"); 
+     let bilangan_dua = document.getElementById("bil-dua"); 
+     let hasil = document.getElementById("hasil"); 
+    
+     hasil.innerHTML = parseInt(bilangan_satu.innerHTML) + parseInt(bilangan_dua.innerHTML); 
+
+    }
+  </script>
+</body>
+</html>

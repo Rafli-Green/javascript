@@ -1,0 +1,39 @@
+<!--
+Instruksi Task:
+jumlahkanlah bilangan pada `box-1` dan `box-2` kemudian
+tampilkan hasilnya di `hasil`
+
+Ketentuan:
+-tidak ada kurasa.. good luck!
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengenalan</title>
+  <style>
+   
+  </style>
+</head>
+<body>
+  <div id="box-1">56</div>
+
+  <div id="box-2">13</div>
+
+  <div id="hasil"></div>
+  
+
+  <script>
+    let angka_satu = document.getElementById("box-1");
+    let angka_dua = document.getElementById("box-2");
+    let hasil = document.getElementById("hasil");
+
+    hasil.innerHTML = parseInt (angka_satu.innerHTML) + parseInt (angka_dua.innerHTML); 
+
+  </script>
+</body>
+</html>
